@@ -59,29 +59,6 @@ const analytics = getAnalytics(app)
 
 parser('Tristan Joseph', '104737100252', 'Santos')
 
-// function checker(name, lrn, surname) {
-// 	let prom = () => {
-// 		return new Promise((resolve, reject) => {
-// 			let field = name
-// 			let arr = field.split('')
-// 			arr.forEach((value) => {
-// 				if (/^\d+$/g.test(value) !== true) {
-// 					resolve('Not Number')
-// 				} else {
-// 					reject('Invalid Input')
-// 				}
-// 			})
-// 		})
-// 	}
-// 	prom()
-// 		.then((value) => {
-// 			console.log(value)
-// 			parser(name, lrn, surname)
-// 		})
-// 		.catch((err) => {
-// 			console.log(err)
-// 		})
-// }
 async function parser(name, lrn, surname) {
 	let con = await convert(name)
 	try {
